@@ -1,0 +1,19 @@
+[package]
+authors = ["Ales Tsurko <ales.tsurko@gmail.com>"]
+description = "Test exercise for ChainSafe"
+edition = "2021"
+name = "cs_test"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-rt = "2.7"
+anyhow = "1.0"
+clap = { version = "4.0", features = ["derive"] }
+ethers = "1.0"
+http = "0.2"
+ipfs-api-backend-actix = { version = "0.6", features = ["with-builder"] }
+
+[build-dependencies]
+ethers-solc = "1.0"
